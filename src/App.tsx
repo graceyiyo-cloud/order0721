@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import { useState, useMemo } from 'react';
 import { Loader2, AlertCircle, CheckCircle2, Coffee } from 'lucide-react';
 
 const scriptURL = 'https://script.google.com/macros/s/AKfycbyOb3DOx9KxP3JElMFyAN1VNd3a83grbuTfU_ZDW7y2qxYTFEMqlJbzixj6ZOSvW6lA/exec';
