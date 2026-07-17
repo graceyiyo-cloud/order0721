@@ -1,0 +1,6 @@
+{
+  "name": "7/21 季會點飲料系統",
+  "description": "鮮自然 7/21(二)季會工作人員點飲料系統",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
