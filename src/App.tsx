@@ -1,5 +1,4 @@
 import { useState, useMemo } from 'react';
-import { Loader2, AlertCircle, CheckCircle2, Coffee } from 'lucide-react';
 
 const scriptURL = 'https://script.google.com/macros/s/AKfycbyOb3DOx9KxP3JElMFyAN1VNd3a83grbuTfU_ZDW7y2qxYTFEMqlJbzixj6ZOSvW6lA/exec';
 
@@ -105,7 +104,6 @@ export default function App() {
         {/* Loading Overlay */}
         {isLoading && (
           <div className="absolute inset-0 bg-white/80 backdrop-blur-sm z-50 flex flex-col items-center justify-center">
-            <Loader2 className="w-12 h-12 text-[#006400] animate-spin mb-4" />
             <p className="font-bold text-[#006400]">訂單送出中...</p>
           </div>
         )}
@@ -113,7 +111,6 @@ export default function App() {
         {/* Success Overlay */}
         {isSuccess && (
           <div className="absolute inset-0 bg-[#006400]/95 z-50 flex flex-col items-center justify-center text-white animate-in fade-in duration-300 p-6">
-            <CheckCircle2 className="w-16 h-16 mb-4 text-green-300" />
             <h2 className="text-2xl font-bold mb-6">訂購成功！</h2>
             <div className="flex flex-col sm:flex-row gap-4 w-full max-w-md justify-center">
               <button 
@@ -143,13 +140,11 @@ export default function App() {
 
         <div className="text-center mb-5 mt-2">
           <h1 className="text-xl sm:text-2xl font-extrabold text-[#006400] tracking-tight flex items-center justify-center gap-2">
-            <Coffee className="w-6 h-6 shrink-0" />
             7/21(二)季會 工作人員點飲料
           </h1>
         </div>
 
         <div className="bg-amber-50 border border-amber-200 text-amber-800 p-3 rounded-lg flex items-center justify-center gap-2 mb-6 shadow-sm text-sm">
-          <AlertCircle className="w-5 h-5 shrink-0 text-amber-600" />
           <p>
             <span className="font-bold text-amber-900">注意：</span>截止為 <span className="font-bold text-amber-900">7/20(一) 早上 11:00</span>，逾時不候！
           </p>
